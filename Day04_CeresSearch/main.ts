@@ -2,6 +2,8 @@
 // run with:
 // deno run --allow-read ./main.ts
 
+export {}
+
 const srcInput = await Deno.readTextFile("./Input/puzzleInput.txt");
 const data = srcInput.split("\r\n").filter((row) => row !== "").map((row) =>
   row.split("")

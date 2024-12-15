@@ -2,6 +2,8 @@
 // run with:
 // deno run --allow-read ./main.ts
 
+export { };
+
 const srcInput = await Deno.readTextFile("./Input/puzzleInput.txt");
 const re1 = /mul\((\d{1,3}),(\d{1,3})\)/g;
 const matches1 = srcInput.matchAll(re1);
